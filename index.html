@@ -1,0 +1,58 @@
+import React from "react";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+export default function Portfolio() {
+  return (
+    <div className="bg-black text-white min-h-screen p-6 font-sans">
+      <div className="relative w-full h-screen flex flex-col justify-center items-center text-center">
+        <img
+          src="/profile.jpg"
+          alt="S Mohammed Fahadh"
+          className="absolute object-cover w-full h-full opacity-20 z-0"
+        />
+        <div className="z-10 max-w-xl">
+          <h1 className="text-5xl font-bold mb-4">S Mohammed Fahadh</h1>
+          <p className="text-lg">
+            Aerospace Engineering Student | Fast Typist (50 WPM) | AI & Data Certified
+          </p>
+          <div className="flex justify-center gap-4 mt-4">
+            <a href="mailto:mohammedfahadh.co@gmail.com">
+              <Button variant="outline">Contact</Button>
+            </a>
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
+              <Button variant="outline">LinkedIn</Button>
+            </a>
+            <a href="https://www.threads.com/@maifahadhhoon" target="_blank">
+              <Button variant="outline">Threads</Button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-12 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6">About Me</h2>
+        <p className="mb-4">
+          I'm S Mohammed Fahadh, currently pursuing Aerospace Engineering at Reva University. I have a fast typing speed of 50 WPM and hold a Junior Typewriting Certificate, along with certifications in AI and Data Fundamentals. Passionate about technology and always eager to learn and build.
+        </p>
+      </div>
+
+      <div className="mt-12 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6">Projects</h2>
+        <Card className="p-4 bg-gray-900 mb-4">
+          <h3 className="text-xl font-semibold">Mini AI Model</h3>
+          <p className="mt-2 text-sm">
+            Developed a basic AI model for educational purposes using Python and hosted it on GitHub.
+          </p>
+        </Card>
+      </div>
+
+      <div className="mt-12 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6">Resume</h2>
+        <a href="/resume.pdf" target="_blank">
+          <Button variant="default">Download Resume</Button>
+        </a>
+      </div>
+    </div>
+  );
+}
